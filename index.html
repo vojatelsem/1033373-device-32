@@ -5,7 +5,7 @@
   <title>HTML Academy: Девайс</title>
 </head>
 <body>
-<header>
+<header class="page-header">
   <nav class="navigation">
     <a href="#"><img src="" alt="Логотип магазина Device"></a>
     <ul>
@@ -64,8 +64,8 @@
           <dt>Радиус поражения</dt>
           <dd>50 м</dd>
         </dl>
-        <button>Предыдущий слайд</button>
-        <button>Следующий слайд</button>
+        <button class="promo-button"><span class="visually-hidden">Предыдущий слайд</span></button>
+        <button class="promo-button"><span class="visually-hidden">Следующий слайд</span></button>
         <a href="#"><img alt="квадракоптер" src=""></a>
       </li>
       <li class="promo-item">
@@ -75,13 +75,13 @@
         <a href="#">Подробнее</a>
         <ul class="promo-pagination">
           <li class="promo-pagination-item">
-            <button>Первый слайд</button>
+            <button><span class="visually-hidden">Первый слайд</span></button>
           </li>
           <li class="promo-pagination-item">
-            <button>Второй слайд</button>
+            <button><span class="visually-hidden">Второй слайд</span></button>
           </li>
           <li class="promo-pagination-item">
-            <button>Третий слайд</button>
+            <button><span class="visually-hidden">Третий слайд</span></button>
           </li>
         </ul>
         <dl class="promo-item-properties">
@@ -138,6 +138,11 @@
   </section>
   <section class="service">
     <h2 class="visually-hidden">Сервисы</h2>
+    <ul class="service-list">
+      <li class="button service-item"><a href="#">Доставка</a></li>
+      <li class="button service-item"><a href="#">Гарантия</a></li>
+      <li class="button service-item"><a href="#">Кредит</a></li>
+    </ul>
     <ul>
       <li class="service-item">
         <h3>Доставка</h3>
@@ -172,39 +177,53 @@
         <li>СДИК</li>
         <li>ТоксБерри</li>
       </ul>
-      <a class="about-us-link" href="#">Подробнее о нас</a>
+      <a class="button" href="#">Подробнее о нас</a>
     </section>
     <section class="about-contacts">
-      <h3>Контакты</h3>
+      <h3 class="about-contacts-title">Контакты</h3>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
-      <h4>Интернет-магазин «Девайс»</h4>
+      <h4 class="about-contacts-subtitle">Интернет-магазин «Девайс»</h4>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <h4>Время работы</h4>
-      <p>пн—пт: с 10:00 до 22:00 </p><br>
-      <p>сб—вс: с 10:00 до 19:00</p><br>
-      <a href="#">Напишите нам</a>
+      <h4 class="about-contacts-subtitle">Время работы</h4>
+      <ul class="contacts-schedule">
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00 </li>
+        <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+      </ul>
+
+      <a class="button" href="#">Напишите нам</a>
     </section>
   </section>
   <section class="distribution">
     <h2 class="visually-hidden">Рассылка</h2>
     <strong>Подпишитесь на рассылку</strong>
-    <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+    <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения
+      и вот это вот всё.</p>
     <span>Это бесплатно</span>
     <form class="distribution-form" action="#" method="post">
       <label for="email">E-mail</label>
-      <input type="email" id="email" placeholder="Ваш e-mail">
+      <input type="email" name="email" id="email" placeholder="Ваш e-mail">
       <input type="submit" value="Подписаться">
     </form>
   </section>
 </main>
-<footer>
-  <!--TODO: Разметить футер-->
+<footer class="page-footer">
   <a href="#"><img src="" alt="Логотип магазина Device"></a>
-  <ul class="footer-contacts">
-    <li class="footer-contact">Санкт-Петербург, набережная реки Карповки, 5, литера П.</li>
-    <li class="footer-contact">Тел.: <a href="tel:+78128121212">+7 (812) 812-12-12</a></li>
-  </ul>
+  <section class="footer-contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+    <address class="contacts-address">
+      <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+    </address>
+
+  </section>
+  <section class="footer-navigation">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+  </section>
+  <section class="social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+  </section>
+
   <ul class="navigation">
     <li class="navigation-item"><a href="#">Доставка</a></li>
     <li class="navigation-item"><a href="#">Гарантия</a></li>

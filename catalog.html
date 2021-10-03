@@ -25,16 +25,16 @@
     </ul>
     <button class="navigation-catalog">Каталог товаров</button>
     <div>
-      <ul class="navigation-catalog-cameras">
+      <ul class="navigation-catalog">
         <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
         <li class="catalog-item"><a href="#">Моноподы для cелфи</a></li>
         <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
       </ul>
-      <ul class="navigation-catalog-watches">
+      <ul class="navigation-catalog">
         <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
         <li class="catalog-item"><a href="#">Умные часы</a></li>
       </ul>
-      <ul class="navigation-catalog-quadrocopters">
+      <ul class="navigation-catalog">
         <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
     <h1 class="inner-header-title">Моноподы для селфи</h1>
 
     <!--breadcrumbs-->
-    <ul class="breadcrumbs">
+    <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Главная</a></li>
       <li class="breadcrumbs-item"><a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a></li>
       <li class="breadcrumbs-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
@@ -75,13 +75,13 @@
           <span class="visually-hidden">Изменить максимальную цену.</span>
         </button>
         <label class="catalog-filter-label">
-          от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+          <input class="catalog-filter-input" type="number" name="min-price" placeholder="от 0 ₽">
         </label>
-
         <label class="catalog-filter-label">
-          до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+           <input class="catalog-filter-input" type="number" name="max-price" placeholder="до 5000 ₽">
         </label>
       </fieldset>
+
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Цвет</legend>
         <ul class="catalog-filter-list">
@@ -163,54 +163,61 @@
     </ul>
 
     <!-- product list-->
-    <ul class="product-list">
+    <ol class="product-list">
+
       <li class="product-item">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
           <h3 class="product-card-title">Любительская селфи-палка</h3>
+          <span class="product-card-price">500 ₽</span>
+          <span>Подробнее</span>
         </a>
-        <a href="">Подробнее</a>
-        <span class="product-card-price">500 ₽</span>
       </li>
+
       <li class="product-item">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
           <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+          <span class="product-card-price">1 500 ₽</span>
+          <span>Подробнее</span>
         </a>
-        <a href="">Подробнее</a>
-        <span class="product-card-price">1 500 ₽</span>
       </li>
+
       <li class="product-item">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
           <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+          <span class="product-card-price">2 500 ₽</span>
+          <a href="">Подробнее</a>
         </a>
-        <a href="">Подробнее</a>
-        <span class="product-card-price">2 500 ₽</span>
       </li>
+
       <li class="product-item">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="" alt="">
           <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+          <span class="product-card-price">4 900 ₽</span>
+          <a href="">Подробнее</a>
         </a>
-        <a href="">Подробнее</a>
-        <span class="product-card-price">4 900 ₽</span>
+
       </li>
-    </ul>
+    </ol>
     <!-- /product list-->
 
     <button class="button pagination-show-more" type="button">Загрузить еще</button>
 
     <!-- catalog-pagination -->
-    <ul class="pagination">
-      <li class="pagination-item"><a href="#">Назад</a></li>
+    <span class="pagination-item"><a href="#">Назад</a></span>
+    <ol class="pagination">
+      <li class="pagination-item"></li>
       <li class="pagination-item"><a href="#">1</a></li>
       <li class="pagination-item"><a href="#">2</a></li>
       <li class="pagination-item"><a href="#">3</a></li>
       <li class="pagination-item"><a href="#">...</a></li>
       <li class="pagination-item"><a href="#">15</a></li>
-      <li class="pagination-item"><a href="#">Вперёд</a></li>
-    </ul>
+      <li class="pagination-item"></li>
+    </ol>
+    <span class="pagination-item"><a href="#">Вперёд</a></span>
     <!-- /catalog-pagination -->
   </section>
   <!--/sorting section-->

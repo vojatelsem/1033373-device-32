@@ -1,3 +1,4 @@
+/* Подключение шрифтов*/
 @font-face {
   font-family: "Raleway";
   font-style: normal;
@@ -28,4 +29,289 @@
   font-weight: 800;
   src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
+}
+
+
+/* Общие стили для body */
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+  color: #444444;
+  background-color: #FFFFFF;
+}
+
+/* правила для header */
+.navigation-catalog {
+  background-color: #FFE17F;
+}
+
+.header-navigation {
+  background-color: #FFE17F;
+}
+
+.header-navigation li {
+  background-color: #FFE17F;
+}
+
+.catalog-item a {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #FFE17F;
+}
+
+
+.navigation-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* класс для жирного заглавного заголовка */
+.uppercase-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+/* Меню пользователя и поиск по сайту*/
+
+.manage-user {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/* Меню каталога товаров и ослуживания товаров */
+.manage-goods {
+  color: #000000;
+  background-color: #FFE17F;
+}
+
+/* Слайдер */
+.title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.slider-item-properties dt {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.slider-item-properties dd {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* Панель с категориями товаров */
+
+.categories-item {
+  background-color: #FFE17F;
+}
+
+.categories-item a {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Сервисы */
+/*
+  используем .title, .uppercase-title и наследуемый от body
+*/
+.service-item {
+  background-color: #F0F0F0;
+}
+
+.service-item a {
+  background-color: #F0F0F0;
+}
+
+.order {
+  background-color: #F0F0F0;
+}
+
+.order a {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+
+/* Раздел "О нас" и "Контакты" */
+/*
+  используем .title, .uppercase-title и наследуемый от body
+*/
+
+
+.about-phone {
+  text-decoration: underline;
+}
+
+/* Рассылка */
+
+.distribution {
+  background-color: #F0F0F0;
+}
+
+.distribution-btn {
+  background-color: #F0F0F0;
+}
+
+.companies-item {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000
+}
+
+/* Правило для адреса в разделе О нас */
+
+.contacts-address {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+/* footer */
+
+.page-footer {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.page-footer a {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+.footer-navigation {
+  color: #FFFFFF;
+  background-color: #444444;
+}
+
+
+.footer-phone {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* стили для каталога */
+.catalog-uppercase-title {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+/* фильтры */
+
+.catalog-filter-item {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+
+/* сортировка */
+
+.sorting-item {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/* список товаров */
+
+.product-card-title {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #000000
+}
+
+.product-card-price {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #444444;
+}
+
+
+.pagination-item {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #444444;
 }

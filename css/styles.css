@@ -57,7 +57,7 @@ body {
   background-color: #FFE17F;
 }
 
-.catalog-item a {
+.catalog-item .navigation-link {
   font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -136,7 +136,7 @@ body {
   background-color: #FFE17F;
 }
 
-.categories-item a {
+.categories-item .navigation-link {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -155,7 +155,7 @@ body {
   background-color: #F0F0F0;
 }
 
-.service-item a {
+.service-item .navigation-link {
   background-color: #F0F0F0;
 }
 
@@ -163,7 +163,7 @@ body {
   background-color: #F0F0F0;
 }
 
-.order a {
+.order .navigation-link {
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -222,7 +222,7 @@ body {
   background-color: #444444;
 }
 
-.page-footer a {
+.page-footer .navigation-link {
   color: #FFFFFF;
   background-color: #444444;
 }
@@ -315,3 +315,5 @@ body {
   text-align: center;
   color: #444444;
 }
+
+

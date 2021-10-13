@@ -10,7 +10,7 @@
 <!--header-->
 <header class="page-header">
   <nav class="header-navigation">
-    <a href="#"><img src="img/icons/nav/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+    <a href="#"><img src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
     <form action="#" class="search" method="post">
       <label class="visually-hidden" for="search-input">Поиск по сайту</label>
       <input id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
@@ -59,39 +59,47 @@
     <ol class="slider-list">
       <li class="slider-item">
         <a href="#"><img src="img/slider/slider-1.png" width="560" height="560" alt="квадракоптер с мощным лазером"></a>
-        <h3 class="title">Порхает как бабочка,жалит как пчела!</h3>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="navigation-link" href="#">Подробнее</a>
-        <dl class="slider-item-properties">
-          <dt>Дальность полета</dt>
-          <dd>800 м</dd>
-          <dt>Радиус поражения</dt>
-          <dd>50 м</dd>
-        </dl>
+        <div class="slider-item-text">
+          <h3 class="title">Порхает как бабочка,жалит как пчела!</h3>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="navigation-link" href="#">Подробнее</a>
+          <dl class="slider-item-properties">
+            <dt>Дальность полета</dt>
+            <dd>800 м</dd>
+            <dt>Радиус поражения</dt>
+            <dd>50 м</dd>
+          </dl>
+        </div>
       </li>
       <li class="slider-item">
         <a href="#"><img src="img/slider/slider-2.png" width="560" height="560" alt="мотивирующий фитнесс браслет"></a>
-        <h3>Худеем правильно!</h3>
-        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <a class="navigation-link" href="#">Подробнее</a>
-        <dl class="slider-item-properties">
-          <dt>Без подзарядки</dt>
-          <dd>48 часов</dd>
-        </dl>
+        <div class="slider-item-text">
+          <h3 class="title">Худеем правильно!</h3>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="navigation-link" href="#">Подробнее</a>
+          <dl class="slider-item-properties">
+            <dt>Без подзарядки</dt>
+            <dd>48 часов</dd>
+          </dl>
+        </div>
+
       </li>
       <li class="slider-item">
         <a href="#"><img src="img/slider/slider-3.png" width="560" height="560" alt="самая длинная селфи палка"></a>
-        <h3>Делай селфи, как Бен Стиллер! </h3>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-        <a class="navigation-link" href="#">Подробнее</a>
-        <dl class="slider-item-properties">
-          <dt>Длина палки</dt>
-          <dd>8,5 м</dd>
-          <dt>Вес палки</dt>
-          <dd>5 кг</dd>
-          <dt>Материал</dt>
-          <dd>Карбон</dd>
-        </dl>
+        <div class="slider-item-text">
+          <h3 class="title">Делай селфи, как Бен Стиллер! </h3>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="navigation-link" href="#">Подробнее</a>
+          <dl class="slider-item-properties">
+            <dt>Длина палки</dt>
+            <dd>8,5 м</dd>
+            <dt>Вес палки</dt>
+            <dd>5 кг</dd>
+            <dt>Материал</dt>
+            <dd>Карбон</dd>
+          </dl>
+        </div>
+
       </li>
     </ol>
     <ul class="slider-pagination">
@@ -112,7 +120,7 @@
 <!--  categories-->
   <section class="categories">
     <h2 class="visually-hidden">Категории товаров</h2>
-    <ul>
+    <ul class="categories-list">
       <li class="categories-item"><a class="navigation-link" href="#">Виртуальная реальность</a></li>
       <li class="categories-item"><a class="navigation-link" href="#">Моноподы для селфи</a></li>
       <li class="categories-item"><a class="navigation-link" href="#">Экшн-камеры</a></li>
@@ -148,12 +156,17 @@
   </section>
 <!--  /services-->
 
+  <!--delivery-->
+  <div class="order">
+    <a class="navigation-link" href="#">Доставим редкий товар под заказ</a>
+  </div>
+  <!--/delivery-->
+
+
 <!--  about-->
   <section class="about">
     <h2 class="visually-hidden">О компании</h2>
-    <div class="order">
-      <a class="navigation-link" href="#">Доставим редкий товар под заказ</a>
-    </div>
+
     <div class="about-us">
       <h3 class="title">О нас</h3>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -198,7 +211,7 @@
 
 </main>
 <footer class="page-footer">
-  <a href="#"><img src="img/icons/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+  <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
   <address class="contacts-address">
     Санкт-Петербург, набережная реки Карповки, 5, литера П.
   </address>
@@ -223,7 +236,7 @@
   </ul>
 <!--  /socials-->
 
-  <a href="https://htmlacademy.ru/"><img src="img/icons/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
+  <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
 </footer>
 </body>
 </html>

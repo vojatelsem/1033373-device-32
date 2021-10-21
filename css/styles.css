@@ -31,10 +31,17 @@
   font-display: swap;
 }
 
+html {
+   height: 100%;
+}
 
 /* Общие стили для body */
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -42,6 +49,24 @@ body {
   line-height: 30px;
   color: #444444;
   background-color: #FFFFFF;
+
+}
+
+li {
+  list-style-type: none;
+}
+.main-inner {
+  background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
+
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
 }
 
 /* правила для header */
@@ -84,6 +109,18 @@ body {
 
 .header-navigation {
   background-color: #FFE17F;
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.user-navigation {
+  background-color: #FFE17F;
+  display: flex;
+  flex-direction: row;
+  width: 1075px;
+  margin: 0 auto;
 }
 
 .header-navigation li {
@@ -140,6 +177,21 @@ body {
   background-color: #FFE17F;
 }
 
+/* Меню гарантии  доставки */
+.main-menu {
+  background-color: #FFE17F;
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+
+}
+
+.main-menu-navigation {
+  margin: 0;
+  padding: 0;
+}
+
 /* Слайдер */
 .title {
   font-family: Raleway, sans-serif;
@@ -148,6 +200,32 @@ body {
   font-size: 50px;
   line-height: 50px;
   color: #000000;
+}
+
+.slider {
+  width: 1160px;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+.slider-item {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.slider-image {
+  width: 560px;
+}
+
+
+.slider-item-text {
+  width: 560px;
 }
 
 .slider-item-properties dt {
@@ -189,6 +267,48 @@ body {
 /*
   используем .title, .uppercase-title и наследуемый от body
 */
+.service {
+  background-color: #F0F0F0;
+}
+
+.service-list {
+  margin: 0;
+  padding: 0;
+}
+
+.service-description-container {
+  width: 691px;
+
+  padding-right: 70px;
+}
+
+.service-item-description {
+  background-color: #F0F0F0
+}
+
+.service-description-list {
+  margin: 0;
+  padding: 0;
+}
+.service-description {
+  width: 500px;
+  margin-left: 116px;
+  margin-right: 263px;
+
+}
+
+
+.service-inner{
+  display: flex;
+  width: 1160px;
+
+}
+
+.service-list-container {
+  width: 160px;
+  margin-right: 124px;
+}
+
 .service-item {
   background-color: #F0F0F0;
 }
@@ -199,6 +319,9 @@ body {
 
 .order {
   background-color: #F0F0F0;
+  width: 1160px;
+  display: flex;
+  flex-direction: row;
 }
 
 .order .navigation-link {
@@ -211,6 +334,23 @@ body {
   text-transform: uppercase;
 }
 
+.categories {
+  width: 1160px;
+}
+.categories-list {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.categories-item .title{
+  width: 160px;
+  margin-left: 140px;
+  margin-right: 120px;
+}
 
 /* Раздел "О нас" и "Контакты" */
 /*
@@ -224,23 +364,38 @@ body {
 
 /* Рассылка */
 
-.distribution {
+.distribution-container {
+  margin: 0 auto;
+  width: 1440px;
   background-color: #F0F0F0;
 }
-
+.distribution {
+  margin: 0 auto;
+  width: 1160px;
+}
 .distribution-btn {
   background-color: #F0F0F0;
 }
 
-.companies-item {
-  font-family: Rubik, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000
+
+
+.about {
+  width: 1160px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: space-between;
+
 }
 
+.about-us {
+  width: 500px;
+}
+
+.about-contacts {
+  width: 515px;
+  margin-right: 47px;
+}
 /* Правило для адреса в разделе О нас */
 
 .contacts-address {
@@ -253,11 +408,29 @@ body {
   background-color: #444444;
 }
 
+.companies-item {
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000
+}
+
+
 /* footer */
 
 .page-footer {
   color: #FFFFFF;
   background-color: #444444;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .page-footer .navigation-link {
@@ -353,5 +526,21 @@ body {
   text-align: center;
   color: #444444;
 }
+
+
+.visually-hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 

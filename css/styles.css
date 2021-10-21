@@ -190,6 +190,8 @@ li {
 .main-menu-navigation {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 /* Слайдер */
@@ -248,9 +250,7 @@ li {
 
 /* Панель с категориями товаров */
 
-.categories-item {
-  background-color: #FFE17F;
-}
+
 
 .categories-item .navigation-link {
   font-family: Raleway, sans-serif;
@@ -429,6 +429,7 @@ li {
 
 .page-footer-container {
   display: flex;
+  flex-direction: row;
   margin: 0 auto;
   width: 1160px;
 }
@@ -497,6 +498,11 @@ li {
 
 /* список товаров */
 
+.product-list {
+  padding: 0;
+  margin: 0;
+}
+
 .product-card-title {
   font-family: Rubik, sans-serif;
   font-style: normal;
@@ -533,14 +539,82 @@ li {
 }
 
 
+.footer-address-block {
+  width: 300px;
+  align-self: flex-start;
+}
+
+.footer-center-block {
+  width: 600px;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.footer-phone-block {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 
+.filter-section {
+  width: 328px;
+}
 
+.sorting-section {
+  width: 760px;
+  padding-left: 72px;
+}
 
+.catalog-container {
+  display: flex;
 
+}
 
+.filter-main-title {
+  background-color: #DCDCDC;
+}
 
+.catalog-filter-form {
+  background-color: #EBEBEB;
+}
 
+.sort-main-title {
+  background-color: #EBEBEB;
+}
 
+.pagination-container {
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: row;
+  width: 760px;
 
+}
 
+.pagination {
+  margin: 0;
+  padding: 0;
+  /*display: flex;
+  flex-direction: row;*/
+  align-self: center;
+
+}
+
+.pagination-prev {
+  align-self: flex-start;
+}
+
+.pagination-next {
+  align-self: flex-end;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}

@@ -8,8 +8,8 @@
 <body>
 
 <!--header-->
-<header class="page-header">
-  <nav class="header-navigation">
+<header class="page-header page-container">
+  <nav class="header-navigation page-container">
     <a href="#"><img src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
     <div class="top-navigation-panel">
       <form action="#" class="search" method="post">
@@ -18,11 +18,11 @@
         <button class="search-button" type="submit">Найти</button>
       </form>
       <ul class="manage-user">
-        <li class="manage-user-item"><a class="navigation-link" href="#">Войти</a></li>
+        <li class="manage-user-item"><a class="manage-link" href="#">Войти</a></li>
       </ul>
       <ul class="manage-goods">
-        <li class="manage-goods-item"><a class="navigation-link" href="#">Сравнить</a></li>
-        <li class="manage-goods-item"><a class="navigation-link" href="#">Корзина</a></li>
+        <li class="manage-goods-item"><a class="manage-link" href="#">Сравнить</a></li>
+        <li class="manage-goods-item"><a class="manage-link" href="#">Корзина</a></li>
       </ul>
     </div>
 
@@ -42,7 +42,7 @@
           <li class="catalog-item"><a class="navigation-link" href="#">Квадрокоптеры</a></li>
         </ul>
       </div>
-      <div class="main-menu">
+      <div class="main-menu page-container">
         <ul class="main-menu-navigation">
           <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
           <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
@@ -57,11 +57,11 @@
 <!--/header-->
 
 <main class="main-inner">
-  <div class="page-container">
+
   <h1 class="visually-hidden">Интернет-магазин "Device"</h1>
 
 <!--slider-->
-  <section class="slider">
+  <section class="slider page-container">
     <h2 class="visually-hidden">Слайдер с топовыми товарами</h2>
     <button>Предыдущий слайд</button>
     <button>Следующий слайд</button>
@@ -75,10 +75,10 @@
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="navigation-link" href="#">Подробнее</a>
           <dl class="slider-item-properties">
-            <dt>Дальность полета</dt>
             <dd>800 м</dd>
-            <dt>Радиус поражения</dt>
+            <dt>Дальность полета</dt>
             <dd>50 м</dd>
+            <dt>Радиус поражения</dt>
           </dl>
         </div>
       </li>
@@ -129,7 +129,7 @@
 <!--/slider-->
 
 <!--  categories-->
-  <section class="categories">
+  <section class="categories page-container">
     <h2 class="visually-hidden">Категории товаров</h2>
     <ul class="categories-list">
       <li class="categories-item"><a class="navigation-link" href="#">Виртуальная реальность</a></li>
@@ -144,7 +144,7 @@
 
 <!--  services-->
   <section class="service">
-    <div class="service-inner">
+    <div class="service-inner page-container">
       <h2 class="visually-hidden">Сервисы</h2>
       <div class="service-list-container">
         <ul class="service-list">
@@ -177,14 +177,14 @@
 <!--  /services-->
 
   <!--delivery-->
-  <div class="order">
+  <div class="order page-container">
     <a class="navigation-link" href="#">Доставим редкий товар под заказ</a>
   </div>
   <!--/delivery-->
 
 
 <!--  about-->
-  <section class="about">
+  <section class="about page-container">
     <h2 class="visually-hidden">О компании</h2>
 
     <div class="about-us">
@@ -203,20 +203,21 @@
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, сможете проверить работоспособность покупки. </p>
       <h4 class="about-contacts-subtitle">Интернет-магазин «Девайс»</h4>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      <a class="navigation-link about-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="about-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <h4 class="about-contacts-subtitle">Время работы</h4>
       <ul class="contacts-schedule">
-        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00 </li>
+        <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
         <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
       </ul>
+
       <a class="navigation-link button" href="#">Напишите нам</a>
     </div>
   </section>
 <!--  /about-->
-  </div>
+
 <!--  distributions-->
   <div class="distribution-container">
-  <section class="distribution">
+  <section class="page-container">
       <h2 class="visually-hidden">Рассылка</h2>
       <b class="title">Подпишитесь на рассылку</b>
       <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения
@@ -234,17 +235,23 @@
 
 </main>
 <footer class="page-footer">
+  <div class="page-container">
+    <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+  </div>
   <div class="page-footer-container">
-    <div class="footer-address-block">
-      <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+    <!-- footer address block-->
+    <div class="footer-address-block footer-block">
+
       <address class="contacts-address">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </address>
     </div>
+    <!--/ footer address block-->
 
+    <!-- footer center block-->
     <div class="footer-center-block">
       <!-- footer navigation-->
-      <ul class="uppercase-title footer-navigation">
+      <ul class="footer-navigation">
         <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
@@ -259,16 +266,17 @@
       </ul>
       <!--  /socials-->
     </div>
+    <!-- /footer center block-->
 
-
-
-    <div class="footer-phone-block">
+    <!-- footer phone block-->
+    <div class="footer-phone-block footer-block">
       <address>
-        <a class="navigation-link footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
 
       <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
     </div>
+    <!-- /footer phone block-->
 
   </div>
 

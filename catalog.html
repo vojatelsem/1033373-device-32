@@ -8,8 +8,8 @@
 <body>
 
 <!--header-->
-<header class="page-header">
-  <nav class="header-navigation">
+<header class="page-header page-container">
+  <nav class="header-navigation page-container">
     <a href="#"><img src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
     <div class="top-navigation-panel">
       <form action="#" class="search" method="post">
@@ -18,11 +18,11 @@
         <button class="search-button" type="submit">Найти</button>
       </form>
       <ul class="manage-user">
-        <li class="manage-user-item"><a class="navigation-link" href="#">Войти</a></li>
+        <li class="manage-user-item"><a class="manage-link" href="#">Войти</a></li>
       </ul>
       <ul class="manage-goods">
-        <li class="manage-goods-item"><a class="navigation-link" href="#">Сравнить</a></li>
-        <li class="manage-goods-item"><a class="navigation-link" href="#">Корзина</a></li>
+        <li class="manage-goods-item"><a class="manage-link" href="#">Сравнить</a></li>
+        <li class="manage-goods-item"><a class="manage-link" href="#">Корзина</a></li>
       </ul>
     </div>
 
@@ -42,7 +42,7 @@
           <li class="catalog-item"><a class="navigation-link" href="#">Квадрокоптеры</a></li>
         </ul>
       </div>
-      <div class="main-menu">
+      <div class="main-menu page-container">
         <ul class="main-menu-navigation">
           <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
           <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
@@ -55,7 +55,6 @@
   </nav>
 </header>
 <!--/header-->
-
 <!--main-->
 <main class="main-inner">
   <div class="page-container">
@@ -178,7 +177,7 @@
         <ol class="product-list">
 
           <li class="product-item">
-            <a class="product-card-link navigation-link" href="#">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/catalog/catalog-1.jpg" width="360" height="380"
                    alt="Любительская селфи-палка">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
@@ -188,7 +187,7 @@
           </li>
 
           <li class="product-item">
-            <a class="product-card-link navigation-link" href="#">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/catalog/catalog-2.jpg" width="360" height="380"
                    alt="Профессиональная селфи-палка">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
@@ -198,7 +197,7 @@
           </li>
 
           <li class="product-item">
-            <a class="product-card-link navigation-link" href="#">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/catalog/catalog-3.jpg" width="360" height="380"
                    alt="Непотопляемая селфи-палка">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
@@ -208,7 +207,7 @@
           </li>
 
           <li class="product-item">
-            <a class="product-card-link navigation-link" href="#">
+            <a class="product-card-link" href="#">
               <img class="product-card-image" src="img/catalog/catalog-4.jpg" width="360" height="380"
                    alt="Селфи-палка в виде руки">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
@@ -225,18 +224,18 @@
         <!-- catalog-pagination -->
         <div class="pagination-container">
           <div class="pagination-prev">
-            <span class="pagination-item catalog-uppercase-title pagination-prev"><a class="navigation-link" href="#">Назад</a></span>
+            <a class="pagination-link" href="#">Назад</a>
           </div>
 
           <ol class="pagination">
-            <li class="pagination-item"><a class="navigation-link" href="#">1</a></li>
-            <li class="pagination-item"><a class="navigation-link" href="#">2</a></li>
-            <li class="pagination-item"><a class="navigation-link" href="#">3</a></li>
-            <li class="pagination-item"><a class="navigation-link" href="#">...</a></li>
-            <li class="pagination-item"><a class="navigation-link" href="#">15</a></li>
+            <li><a class="pagination-count" href="#">1</a></li>
+            <li><a class="pagination-count" href="#">2</a></li>
+            <li><a class="pagination-count" href="#">3</a></li>
+            <li><a class="pagination-count" href="#">...</a></li>
+            <li><a class="pagination-count" href="#">15</a></li>
           </ol>
           <div class="pagination-next">
-            <span class="pagination-item catalog-uppercase-title"><a class="navigation-link" href="#">Вперёд</a></span>
+            <a class="pagination-link" href="#">Вперёд</a>
           </div>
 
           <!-- /catalog-pagination -->
@@ -253,14 +252,20 @@
 
 <!-- footer-->
 <footer class="page-footer">
+  <div class="page-container">
+    <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+  </div>
   <div class="page-footer-container">
-    <div class="footer-address-block">
-      <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+    <!-- footer address block-->
+    <div class="footer-address-block footer-block">
+
       <address class="contacts-address">
         Санкт-Петербург, набережная реки Карповки, 5, литера П.
       </address>
     </div>
+    <!--/ footer address block-->
 
+    <!-- footer center block-->
     <div class="footer-center-block">
       <!-- footer navigation-->
       <ul class="uppercase-title footer-navigation">
@@ -278,16 +283,17 @@
       </ul>
       <!--  /socials-->
     </div>
+    <!-- /footer center block-->
 
-
-
-    <div class="footer-phone-block">
+    <!-- footer phone block-->
+    <div class="footer-phone-block footer-block">
       <address>
-        <a class="navigation-link footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
 
       <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
     </div>
+    <!-- /footer phone block-->
 
   </div>
 

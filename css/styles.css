@@ -35,6 +35,29 @@ html {
    height: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Общие стили для body */
 
 body {
@@ -75,22 +98,26 @@ li {
   flex-direction: column;
 }
 
-.top-navigation-panel {
-  width: 1041px;
+.header-logo {
+  display: block;
+  margin-left: 61px;
+}
+
+.user-panel {
+  min-width: 1041px;
   display: flex;
   flex-direction: row;
   padding: 0 60px;
+  margin-top: 48px;
+  margin-bottom: 29px;
 }
 
 .search {
   width: 516px;
+  margin-right: 24px;
 }
 
-.manage-user {
-  margin: 0;
-  padding: 0;
-  width: 245px;
-}
+
 
 .manage-link {
   font-size: 16px;
@@ -98,10 +125,26 @@ li {
   color: #000000;
   text-decoration: none;
 }
-
+/* основное меню */
+.main-menu-panel {
+  display: flex;
+  width: 1041px;
+  padding: 0 60px;
+  margin-bottom: 38px;
+}
 
 .navigation-catalog {
   background-color: #FFE17F;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  min-width: 293px;
+  margin-right: 247px;
+
 }
 
 .header-navigation {
@@ -123,18 +166,9 @@ li {
   background-color: #FFE17F;
 }
 
-.catalog-item .navigation-link {
-  font-family: Rubik, sans-serif;
+.main-menu-link {
+  font-family: Raleway;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  background-color: #FFE17F;
-}
-
-
-.navigation-link {
-  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -144,47 +178,81 @@ li {
   text-transform: uppercase;
 }
 
-/* класс для жирного заглавного заголовка */
-.uppercase-title {
 
-  text-transform: uppercase;
+
+.catalog-item .navigation-link {
+  font-family: Rubik, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #FFE17F;
+}
+
+/*
+.navigation-link {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
   color: #000000;
-}
+  text-transform: uppercase;
 
-.top-second-panel {
-   display: flex;
-   margin: 0 60px;
-  width: 1041px;
-}
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+
+}*/
 
 /* Меню пользователя и поиск по сайту*/
 
 .manage-user {
+
   font-family: Rubik, sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  min-width: 245px;
   line-height: 19px;
   color: #000000;
+
+  margin: 0;
+  padding: 0;
+  margin-right: 19px;
+
 }
 
 /* Меню каталога товаров и ослуживания товаров */
 .manage-goods {
-  margin: 0;
-  padding: 0;
+
   line-height: 19px;
-  width: 240px;
   color: #000000;
   background-color: #FFE17F;
-  display: flex;
 
+  display: flex;
+  width: 240px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+
+}
+
+
+.manage-goods-item {
+  margin-right: 74px;
 }
 
 /* Меню гарантии  доставки */
 .main-menu {
   background-color: #FFE17F;
   display: flex;
-  flex-direction: column;
+  margin-left: auto;
+}
+
+.main-menu:last-child {
+  margin-left: 62px;
+  margin-right: 0;
 }
 
 .main-menu-navigation {
@@ -192,6 +260,14 @@ li {
   padding: 0;
   display: flex;
   flex-direction: row;
+
+}
+
+
+
+.main-menu-item {
+  margin-right: 19px;
+
 }
 
 /* Слайдер */
@@ -250,18 +326,24 @@ li {
 
 /* Панель с категориями товаров */
 
-.categories-item .navigation-link {
+.categories-link {
+
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: -0.02em;
   text-transform: none;
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Сервисы */
-/*
-  используем .title, .uppercase-title и наследуемый от body
-*/
+
 .service {
   background-color: #F0F0F0;
   width: 100%;
+  margin-bottom: 90px;
 }
 
 .service-list {
@@ -271,7 +353,6 @@ li {
 
 .service-description-container {
   width: 691px;
-
   padding-right: 70px;
 }
 
@@ -290,7 +371,6 @@ li {
 
 }
 
-
 .service-inner{
   display: flex;
   width: 1160px;
@@ -299,33 +379,53 @@ li {
 
 .service-list-container {
   width: 160px;
+  margin-top: 60px;
   margin-right: 124px;
 }
 
 .service-item {
   background-color: #F0F0F0;
+  margin-bottom: 23px;
+  margin-right: auto;
 }
 
-.service-item .navigation-link {
+.service-link {
+  display: block;
   background-color: #F0F0F0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.order {
+
+
+/* Доставка */
+
+.delivery {
   background-color: #F0F0F0;
   width: 1160px;
   display: flex;
   flex-direction: row;
 }
 
-.order .navigation-link {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
+.delivery-logo {
+   min-width: 47px;
+  min-height: 31px;
+  padding: 34px 39px;
+}
+
+.delivery-link {
+  font-family: Raleway;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  padding: 40px 125px;
 }
+
+
 
 .categories {
   width: 1160px;
@@ -346,9 +446,6 @@ li {
 }
 
 /* Раздел "О нас" и "Контакты" */
-/*
-  используем .title, .uppercase-title и наследуемый от body
-*/
 
 
 .about-phone {
@@ -358,9 +455,11 @@ li {
 /* Рассылка */
 
 .distribution-container {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 100%;
   background-color: #F0F0F0;
+  padding-bottom: 140px;
+  padding-top: 75px;
 }
 
 
@@ -368,7 +467,13 @@ li {
   background-color: #F0F0F0;
 }
 
+.distribution-title {
 
+}
+
+
+
+/* Правило для адреса в разделе О нас */
 
 .about {
   display: flex;
@@ -384,7 +489,7 @@ li {
   width: 515px;
   margin-right: 47px;
 }
-/* Правило для адреса в разделе О нас */
+
 
 .contacts-address {
   font-family: Rubik, sans-serif;
@@ -398,9 +503,7 @@ li {
 
 .companies-item {
   font-family: Rubik, sans-serif;
-  font-style: normal;
   font-weight: 700;
-  font-size: 18px;
   line-height: 20px;
   color: #000000
 }
@@ -413,6 +516,12 @@ li {
   background-color: #444444;
   width: 100%;
   margin: 0 auto;
+}
+
+.footer-logo {
+  display: block;
+  padding-top: 62px;
+  padding-bottom: 35px;
 }
 
 .page-footer-container {
@@ -431,6 +540,10 @@ li {
   color: #FFFFFF;
   background-color: #444444;
   display: flex;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 63px;
+
 }
 
 
@@ -440,9 +553,77 @@ li {
   font-style: normal;
   text-decoration: none;
   color: #FFFFFF;
+  display: block;
+  margin-bottom: 53px;
+}
+
+.footer-block {
+  width: 300px;
+}
+
+.footer-address-block {
+  align-self: flex-start;
+}
+
+.footer-center-block {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 58px 61px 114px;
+
+}
+
+.footer-phone-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  margin-bottom: 53px;
+}
+
+.footer-link {
+  padding-right: 7px;
+  width: 148px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+
+.socials {
+  margin: 0 0 61px 0;
+  display: flex;
+
+}
+
+.socials-link {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  list-style-type: none;
+  border: 1px solid red;
+  display: block;
+
+}
+
+.logo-htmlacademy {
+  margin-bottom: 64px;
 }
 
 /* стили для каталога */
+.catalog-container {
+  display: flex;
+}
+
 .catalog-uppercase-title {
   font-family: Raleway, sans-serif;
   font-style: normal;
@@ -462,7 +643,32 @@ li {
   letter-spacing: -0.02em;
 }
 
+/* Хлебные крошки */
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* фильтры */
+
+.filter-main-title {
+  background-color: #DCDCDC;
+}
+
+.catalog-filter-form {
+  background-color: #EBEBEB;
+}
 
 .catalog-filter-item {
   font-family: Rubik, sans-serif;
@@ -473,8 +679,18 @@ li {
   color: #000000;
 }
 
+.filter-section {
+  width: 328px;
+}
+
 
 /* сортировка */
+
+.sorting-section {
+  width: 760px;
+  padding-left: 72px;
+
+}
 
 .sorting-item {
   font-family: Rubik, sans-serif;
@@ -485,16 +701,21 @@ li {
   color: #000000;
 }
 
+.sort-main-title {
+  display: block;
+  margin: 25px 72px;
+}
+
 /* список товаров */
 
 .product-list {
   padding: 0;
-  margin: 0;
+  margin: 0 0 44px 0;
+
 }
 
 .product-card-link {
   font-family: Rubik, sans-serif;
-  font-style: normal;
   text-decoration: none;
   font-size: 18px;
   line-height: 24px;
@@ -513,62 +734,8 @@ li {
   color: #444444;
 }
 
-.visually-hidden {
-  display: none;
-}
-.footer-block {
-  width: 300px;
-}
 
-.footer-address-block {
-  align-self: flex-start;
-}
-
-.footer-center-block {
-  width: 600px;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-.footer-phone-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
-
-}
-
-
-.filter-section {
-  width: 328px;
-}
-
-.sorting-section {
-  width: 760px;
-  padding-left: 72px;
-}
-
-.catalog-container {
-  display: flex;
-
-}
-
-.filter-main-title {
-  background-color: #DCDCDC;
-}
-
-.catalog-filter-form {
-  background-color: #EBEBEB;
-}
-
-.sort-main-title {
-  background-color: #EBEBEB;
-}
+/* Пагинация */
 
 .pagination-container {
   background-color: #EBEBEB;
@@ -580,6 +747,7 @@ li {
 
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 77px;
 }
 
 .pagination {
@@ -599,12 +767,7 @@ li {
   line-height: 19px;
 }
 
-.breadcrumbs-list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
+
 
 .pagination-link {
   font-family: Raleway, sans-serif;
@@ -630,6 +793,11 @@ li {
   padding: 12px;
   margin: 0 2px;
   display: block;
+}
+
+.pagination-show-more {
+  margin-bottom: 51px;
+  min-height: 55px;
 }
 
 

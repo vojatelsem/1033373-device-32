@@ -11,11 +11,11 @@
 <header class="page-header page-container">
   <nav class="header-navigation page-container">
     <a href="#"><img src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
-    <div class="top-navigation-panel">
+    <div class="user-panel">
       <form action="#" class="search" method="post">
         <label class="visually-hidden" for="search-input">Поиск по сайту</label>
         <input id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
-        <button class="search-button" type="submit">Найти</button>
+        <button class="search-button visually-hidden" type="submit">Найти</button>
       </form>
       <ul class="manage-user">
         <li class="manage-user-item"><a class="manage-link" href="#">Войти</a></li>
@@ -26,8 +26,8 @@
       </ul>
     </div>
 
-    <div class="top-second-panel">
-      <button class="uppercase-title navigation-catalog">Каталог товаров</button>
+    <div class="main-menu-panel">
+      <button class="navigation-catalog">Каталог товаров</button>
       <div class="main-navigation-block visually-hidden">
         <ul class="navigation-catalog-list">
           <li class="catalog-item"><a class="navigation-link" href="#">Виртуальная реальность</a></li>
@@ -44,10 +44,11 @@
       </div>
       <div class="main-menu page-container">
         <ul class="main-menu-navigation">
-          <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
-          <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
-          <li class="uppercase-title navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+          <li class="main-menu-item"><a class="navigation-link" href="#">Доставка</a></li>
+          <li class="main-menu-item"><a class="navigation-link" href="#">Гарантия</a></li>
+          <li class="main-menu-item main-menu-contacts"><a class="navigation-link" href="#">Контакты</a></li>
         </ul>
+
       </div>
 
     </div>
@@ -64,8 +65,8 @@
       <!--breadcrumbs-->
 
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link navigation-link">Главная</a></li>
-        <li class="breadcrumbs-item"><a href="catalog.html" class="breadcrumbs-link navigation-link">Каталог товаров</a>
+        <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link">Главная</a></li>
+        <li class="breadcrumbs-item"><a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
       </ul>
@@ -182,7 +183,7 @@
                    alt="Любительская селфи-палка">
               <h3 class="product-card-title">Любительская селфи-палка</h3>
               <span class="product-card-price">500 ₽</span>
-              <span>Подробнее</span>
+              <span><a  class="button" href="#">Подробнее</a></span>
             </a>
           </li>
 
@@ -192,7 +193,7 @@
                    alt="Профессиональная селфи-палка">
               <h3 class="product-card-title">Профессиональная селфи-палка</h3>
               <span class="product-card-price">1 500 ₽</span>
-              <span>Подробнее</span>
+              <span><a  class="button" href="#">Подробнее</a></span>
             </a>
           </li>
 
@@ -202,7 +203,7 @@
                    alt="Непотопляемая селфи-палка">
               <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
               <span class="product-card-price">2 500 ₽</span>
-              <span>Подробнее</span>
+              <span><a  class="button" href="#">Подробнее</a></span>
             </a>
           </li>
 
@@ -212,14 +213,14 @@
                    alt="Селфи-палка в виде руки">
               <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
               <span class="product-card-price">4 900 ₽</span>
-              <span>>Подробнее</span>
+              <span><a  class="button" href="#">Подробнее</a></span>
             </a>
 
           </li>
         </ol>
         <!-- /product list-->
 
-        <button class="button pagination-show-more catalog-uppercase-title" type="button">Загрузить еще</button>
+        <button class="button pagination-show-more catalog-uppercase-title pagination-container" type="button">Загрузить еще</button>
 
         <!-- catalog-pagination -->
         <div class="pagination-container">
@@ -269,9 +270,9 @@
     <div class="footer-center-block">
       <!-- footer navigation-->
       <ul class="uppercase-title footer-navigation">
-        <li class="navigation-item"><a class="navigation-link" href="#">Доставка</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Гарантия</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="#">Контакты</a></li>
+        <li class="main-menu-item"><a class="navigation-link" href="#">Доставка</a></li>
+        <li class="main-menu-item"><a class="navigation-link" href="#">Гарантия</a></li>
+        <li class="main-menu-item"><a class="navigation-link" href="#">Контакты</a></li>
       </ul>
       <!-- /footer navigation-->
 

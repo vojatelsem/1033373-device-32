@@ -47,7 +47,7 @@ html {
 }
 
 .button {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -139,7 +139,7 @@ li {
 
 .navigation-catalog {
   background-color: #FFE17F;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -171,7 +171,7 @@ li {
 }
 
 .main-menu-link {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -225,9 +225,8 @@ li {
   line-height: 19px;
   color: #000000;
 
-  margin: 0;
   padding: 0;
-  margin-right: 19px;
+  margin: 0 19px 0 0;
 
 }
 
@@ -268,18 +267,19 @@ li {
 }
 
 .main-menu-navigation {
-  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
   width: 300px;
-  margin-right: auto;
+  margin: 0 auto 0 0;
 }
 
 
 
 .main-menu-item {
   margin-right: 19px;
+
+
 
 }
 
@@ -340,8 +340,7 @@ li {
 /* Панель с категориями товаров */
 
 .categories-link {
-
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -354,9 +353,14 @@ li {
 /* Сервисы */
 
 .service {
-  background-color: #F0F0F0;
   width: 100%;
   margin-bottom: 90px;
+}
+
+.service-background {
+  background-color: #F0F0F0;
+  margin-bottom: 90px;
+  padding: 90px 0 70px;
 }
 
 .service-list {
@@ -371,6 +375,7 @@ li {
 
 .service-item-description {
   background-color: #F0F0F0
+
 }
 
 .service-description-list {
@@ -386,13 +391,10 @@ li {
 
 .service-inner{
   display: flex;
-  width: 1160px;
-
 }
 
 .service-list-container {
   width: 160px;
-  margin-top: 60px;
   margin-right: 124px;
 }
 
@@ -400,6 +402,15 @@ li {
   background-color: #F0F0F0;
   margin-bottom: 23px;
   margin-right: auto;
+}
+
+.service-item-description p {
+  margin-top: 0;
+}
+
+.service-title {
+  margin-top: 0;
+  margin-bottom: 14px;
 }
 
 .service-link {
@@ -427,7 +438,7 @@ li {
 }
 
 .delivery-link {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -467,7 +478,7 @@ li {
 
 /* Рассылка */
 
-.distribution-container {
+.distribution {
   /*margin: 0 auto;*/
   width: 100%;
   background-color: #F0F0F0;
@@ -475,14 +486,58 @@ li {
   padding-top: 75px;
 }
 
+.distribution-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.distribution-form {
+  width: 100%;
+  display: flex;
+}
+
+.distribution-email {
+  width: 600px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
 
 .distribution-btn {
+
+  width: 260px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+
+
   background-color: #F0F0F0;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #000000;
+
+
+
 }
 
 .distribution-title {
+  margin-top: 0;
+  margin-right: 40px;
 
+  width: 560px;
 }
+.distribution-content {
+  width: 560px;
+}
+
+.distribution-free {
+  margin-left: auto;
+  align-self: center;
+}
+
 
 
 
@@ -492,12 +547,22 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 87px;
+}
+
+.about p {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .about-us {
   width: 500px;
   display: flex;
   flex-direction: column;
+}
+
+.about-title {
+  margin-bottom: 26px;
 }
 
 .about-contacts {
@@ -514,6 +579,10 @@ li {
   margin-top: auto;
 }
 
+.about-contacts address {
+  font-style: normal;
+}
+
 .contacts-address {
   font-family: Rubik, sans-serif;
   font-style: normal;
@@ -526,15 +595,21 @@ li {
 
 .list-companies {
   margin-bottom: 52px;
-
+  margin-top: 55px;
 }
 
 
 .companies-item {
+  margin-bottom: 20px;
+
   font-family: Rubik, sans-serif;
   font-weight: 700;
   line-height: 20px;
-  color: #000000
+  color: #000000;
+
+}
+.companies-item:last-child {
+  margin-bottom: 0;
 }
 
 
@@ -545,12 +620,14 @@ li {
   background-color: #444444;
   width: 100%;
   margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 61px;
 }
 
-.footer-logo {
-  display: block;
-  padding-top: 62px;
-  padding-bottom: 35px;
+
+
+.footer-logo-container {
+  margin-bottom: 35px;
 }
 
 .page-footer-container {
@@ -569,9 +646,8 @@ li {
   color: #FFFFFF;
   background-color: #444444;
   display: flex;
-  margin: 0 auto;
   padding: 0;
-  margin-bottom: 63px;
+  margin: 0 auto 63px;
 
 }
 
@@ -591,14 +667,13 @@ li {
 }
 
 .footer-address-block {
-  align-self: flex-start;
 }
 
 .footer-center-block {
   width: 600px;
   display: flex;
   flex-direction: column;
-  margin: 0 58px 61px 114px;
+  margin: 0 auto;
 
 }
 
@@ -609,12 +684,18 @@ li {
 
   font-family: Rubik, sans-serif;
   font-size: 16px;
-  margin-bottom: 53px;
+}
+
+.footer-menu-item {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .footer-link {
-  padding-right: 7px;
-  width: 148px;
+  padding-right: 3px;
+  padding-left: 3px;
+  min-width: 148px;
+  box-sizing: border-box;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -626,11 +707,15 @@ li {
   color: #FFFFFF;
   text-decoration: none;
 
+
 }
 
+
 .socials {
-  margin: 0 0 61px 0;
+
   display: flex;
+  margin: auto auto 0;
+  padding: 0;
 
 }
 
@@ -641,11 +726,13 @@ li {
   list-style-type: none;
   border: 1px solid red;
   display: block;
+  margin-right: 7px;
+  margin-left: 7px;
 
 }
 
-.logo-htmlacademy {
-  margin-bottom: 64px;
+.logo-partners {
+  margin-top: auto;
 }
 
 /* стили для каталога */

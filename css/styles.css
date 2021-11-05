@@ -117,7 +117,11 @@ li {
   margin-right: 24px;
 }
 
-
+.search-input {
+  display: block;
+  height: 20px;
+  box-sizing: border-box;
+}
 
 .manage-link {
   font-size: 16px;
@@ -176,6 +180,10 @@ li {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+}
+
+.main-menu-contacts {
+
 }
 
 
@@ -243,15 +251,19 @@ li {
   margin-right: 74px;
 }
 
+.manage-goods-item:last-child  {
+  margin-right: 0;
+}
+
 /* Меню гарантии  доставки */
 .main-menu {
   background-color: #FFE17F;
   display: flex;
   margin-left: auto;
+  width: 100%;
 }
 
 .main-menu:last-child {
-  margin-left: 62px;
   margin-right: 0;
 }
 
@@ -260,7 +272,8 @@ li {
   padding: 0;
   display: flex;
   flex-direction: row;
-
+  width: 300px;
+  margin-right: auto;
 }
 
 
@@ -483,6 +496,8 @@ li {
 
 .about-us {
   width: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-contacts {
@@ -490,6 +505,14 @@ li {
   margin-right: 47px;
 }
 
+.contacts-schedule {
+  margin-bottom: 67px;
+  margin-top: auto;
+}
+
+.btn-about {
+  margin-top: auto;
+}
 
 .contacts-address {
   font-family: Rubik, sans-serif;
@@ -500,6 +523,12 @@ li {
   color: #FFFFFF;
   background-color: #444444;
 }
+
+.list-companies {
+  margin-bottom: 52px;
+
+}
+
 
 .companies-item {
   font-family: Rubik, sans-serif;

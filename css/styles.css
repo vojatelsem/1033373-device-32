@@ -784,6 +784,7 @@ li {
 
 .catalog-filter-form {
   background-color: #EBEBEB;
+  padding: 70px 70px 70px 60px;
 }
 
 .catalog-filter-item {
@@ -806,6 +807,10 @@ li {
   width: 760px;
   padding-left: 72px;
 
+}
+
+.sort-panel {
+  width: 832px;
 }
 
 .sorting-item {

@@ -10,11 +10,11 @@
 <!--header-->
 <header class="page-header page-container">
   <nav class="header-navigation page-container">
-    <a href="#"><img src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+    <a href="#"><img class="header-logo" src="img/device-logo.svg" width="145" height="36" alt="Логотип магазина Device"></a>
     <div class="user-panel">
       <form action="#" class="search" method="post">
         <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-        <input id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
+        <input class="search-input" id="search-input" name="search-input" type="text" placeholder="Поиск по сайту">
         <button class="search-button visually-hidden" type="submit">Найти</button>
       </form>
       <ul class="manage-user">
@@ -30,9 +30,9 @@
       <button class="navigation-catalog">Каталог товаров</button>
       <div class="main-navigation-block visually-hidden">
         <ul class="navigation-catalog-list">
-          <li class="catalog-item"><a class="navigation-link" href="#">Виртуальная реальность</a></li>
-          <li class="catalog-item"><a class="navigation-link" href="#">Моноподы для cелфи</a></li>
-          <li class="catalog-item"><a class="navigation-link" href="#">Экшн-камеры</a></li>
+          <li class="catalog-item"><a class="catalog-link" href="#">Виртуальная реальность</a></li>
+          <li class="catalog-item"><a class="catalog-link" href="#">Моноподы для cелфи</a></li>
+          <li class="catalog-item"><a class="catalog-link" href="#">Экшн-камеры</a></li>
         </ul>
         <ul class="navigation-catalog-list">
           <li class="catalog-item"><a class="navigation-link" href="#">Фитнес-браслеты</a></li>
@@ -42,13 +42,12 @@
           <li class="catalog-item"><a class="navigation-link" href="#">Квадрокоптеры</a></li>
         </ul>
       </div>
-      <div class="main-menu page-container">
+      <div class="main-menu">
         <ul class="main-menu-navigation">
-          <li class="main-menu-item"><a class="navigation-link" href="#">Доставка</a></li>
-          <li class="main-menu-item"><a class="navigation-link" href="#">Гарантия</a></li>
-          <li class="main-menu-item main-menu-contacts"><a class="navigation-link" href="#">Контакты</a></li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Доставка</a></li>
+          <li class="main-menu-item"><a class="main-menu-link" href="#">Гарантия</a></li>
         </ul>
-
+        <a class="main-menu-link main-menu-contacts" href="#">Контакты</a>
       </div>
 
     </div>
@@ -161,18 +160,21 @@
 
       <!--sorting section-->
       <section class="sorting-section">
-        <h2 class="catalog-uppercase-title sort-main-title">Cортировка:</h2>
-        <label class="visually-hidden" for="sorting-field">Сортировка:</label>
-        <select class="sorting" name="sorting" id="sorting-field">
-          <option class="sorting-item" value="more_popular">Сначала популярное</option>
-          <option class="sorting-item" value="more_cheap">Сначала дешёвое</option>
-          <option class="sorting-item" value="more_costly">Сначала дорогое</option>
-        </select>
+        <div class="sort-panel">
+          <h2 class="catalog-uppercase-title sort-main-title">Cортировка:</h2>
+          <label class="visually-hidden" for="sorting-field">Сортировка:</label>
+          <select class="sorting" name="sorting" id="sorting-field">
+            <option class="sorting-item" value="more_popular">Сначала популярное</option>
+            <option class="sorting-item" value="more_cheap">Сначала дешёвое</option>
+            <option class="sorting-item" value="more_costly">Сначала дорогое</option>
+          </select>
 
-        <ul class="sort-list">
-          <li class="sort-item"><a href=""><span class="visually-hidden">сортировка по убыванию</span></a></li>
-          <li class="sort-item"><a href=""><span class="visually-hidden">сортировка по возрастанию</span></a></li>
-        </ul>
+          <ul class="sort-list">
+            <li class="sort-item"><a href=""><span class="visually-hidden">сортировка по убыванию</span></a></li>
+            <li class="sort-item"><a href=""><span class="visually-hidden">сортировка по возрастанию</span></a></li>
+          </ul>
+        </div>
+
 
         <!-- product list-->
         <ol class="product-list">
@@ -251,10 +253,9 @@
 </main>
 <!--/main-->
 
-<!-- footer-->
 <footer class="page-footer">
-  <div class="page-container">
-    <a href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
+  <div class="page-container footer-logo-container">
+    <a class="footer-logo" href="#"><img src="img/device-logo-footer.svg" width="145" height="36" alt="Логотип магазина Device"></a>
   </div>
   <div class="page-footer-container">
     <!-- footer address block-->
@@ -269,18 +270,18 @@
     <!-- footer center block-->
     <div class="footer-center-block">
       <!-- footer navigation-->
-      <ul class="uppercase-title footer-navigation">
-        <li class="main-menu-item"><a class="navigation-link" href="#">Доставка</a></li>
-        <li class="main-menu-item"><a class="navigation-link" href="#">Гарантия</a></li>
-        <li class="main-menu-item"><a class="navigation-link" href="#">Контакты</a></li>
+      <ul class="footer-navigation">
+        <li class="footer-menu-item"><a class="footer-link" href="#">Доставка</a></li>
+        <li class="footer-menu-item"><a class="footer-link" href="#">Гарантия</a></li>
+        <li class="footer-menu-item"><a class="footer-link" href="#">Контакты</a></li>
       </ul>
       <!-- /footer navigation-->
 
       <!--  socials-->
       <ul class="socials">
-        <li class="social-item"><a class="navigation-link" href="https://www.facebook.com/htmlacademy">Facebook</a></li>
-        <li class="social-item"><a class="navigation-link" href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
-        <li class="social-item"><a class="navigation-link" href="https://twitter.com/htmlacademy_ru">Twitter</a></li>
+        <li class="social-item"><a class="socials-link" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-item"><a class="socials-link" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-item"><a class="socials-link" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
       <!--  /socials-->
     </div>
@@ -291,15 +292,16 @@
       <address>
         <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </address>
+      <div class="logo-partners">
+        <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
+      </div>
 
-      <a href="https://htmlacademy.ru/"><img src="img/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html academy"></a>
     </div>
     <!-- /footer phone block-->
 
   </div>
 
 </footer>
-
 <!-- /footer -->
 </body>
 </html>

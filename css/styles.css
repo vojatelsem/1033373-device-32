@@ -80,12 +80,9 @@ li {
 }
 .main-inner {
   background-color: #FFFFFF;
-}
-
-.main-container {
   flex-grow: 1;
-
 }
+
 
 .page-container {
   width: 1160px;

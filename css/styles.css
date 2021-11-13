@@ -226,15 +226,13 @@ li {
 
 
 .manage-goods-item {
-  margin-left: 14px;
-  min-width: 60px;
-  text-align: right;
+  margin-right: auto;
   display: block;
 }
 
-.manage-goods-item:first-child  {
-  margin-left: 0;
-}
+/*.manage-goods-item:first-child  {
+  margin-right: 0;
+}*/
 
 /* Меню гарантии  доставки */
 .main-menu {
@@ -267,7 +265,6 @@ li {
 .main-menu-contacts {
   display: flex;
   flex-wrap: wrap;
-  max-width: 140px;
   max-width: 140px;
 }
 
@@ -490,12 +487,14 @@ li {
 .distribution-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .distribution-form {
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 39px;
 
 }
 
@@ -529,6 +528,8 @@ li {
 
 .distribution-title {
   margin-top: 0;
+  margin-bottom: 0;
+
   margin-right: 40px;
 
   width: 560px;
@@ -538,8 +539,8 @@ li {
 }
 
 .distribution-free {
-  min-width: 164px;
-  max-width: 164px;
+  width: 164px;
+
   margin-left: auto;
   align-self: center;
   text-align: right;
@@ -591,6 +592,7 @@ li {
 }
 
 .contacts-address {
+  margin-bottom: 5px;
   font-family: Rubik, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -598,7 +600,7 @@ li {
   line-height: 19px;
   color: #FFFFFF;
   background-color: #444444;
-  padding-bottom: 5px;
+
 }
 
 .list-companies {
@@ -662,19 +664,27 @@ li {
 
 
 .footer-phone {
+  display: block;
+
+
   font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   text-decoration: none;
   color: #FFFFFF;
-  display: block;
+
+}
+
+.footer-phone-block address {
+  margin-bottom: 5px;
 }
 
 .footer-block {
   width: 300px;
 }
 
-.footer-address-block {
+.footer-address-block address{
+  margin-bottom: 5px;
 }
 
 .footer-center-block {
@@ -814,6 +824,8 @@ li {
   grid-column: 1/3;
   background-color: #dcdcdc;
   padding: 25px 32px 25px 60px;
+  display: flex;
+  align-items: center;
 }
 
 .filter-title h2 {
@@ -825,7 +837,7 @@ li {
 
 .filter-form-container {
   grid-column: 1 / 3;
-  grid-row: 2 / 5;
+  grid-row: 2 / 6;
   background-color: #e5e5e5;
   padding: 70px 70px 70px 60px;
 }
@@ -846,7 +858,8 @@ li {
 .sort-panel-title {
   display: flex;
   align-items: center;
-  width: 832px;
+  width: 760px;
+  padding: 25px 0 25px 72px;
 }
 
 .sorting-item {
@@ -872,7 +885,8 @@ li {
 
 .sort-main-title {
   display: block;
-  margin: 25px 72px;
+  margin: 0 46px 0 0;
+
 }
 
 /* список товаров */
@@ -940,7 +954,7 @@ li {
   line-height: 19px;
   margin-bottom: 77px;
   grid-column: 3 / 4;
-  grid-row: 4;
+  grid-row: 5;
 }
 
 .pagination {
@@ -991,6 +1005,7 @@ li {
 
 .pagination-show-more {
   grid-column:  3 / 4;
+  grid-row: 4;
   margin-bottom: 51px;
   margin-left: 72px;
   min-height: 55px;

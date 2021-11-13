@@ -297,12 +297,7 @@ li {
   width: 560px;
 }
 
-.slider-item-properties {
-   display: grid;
-   grid-template-columns: repeat(3, 160px);
-   grid-template-rows: 52px 30px;
-   column-gap: 20px;
-}
+
 
 .slider-item-properties dt {
   font-family: Rubik, sans-serif;

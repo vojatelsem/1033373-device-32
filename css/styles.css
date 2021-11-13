@@ -158,13 +158,7 @@ li {
 
 }
 
-.user-navigation {
-  background-color: #FFE17F;
-  display: flex;
-  flex-direction: row;
-  width: 1075px;
-  margin: 0 auto;
-}
+
 
 .header-navigation li {
   background-color: #FFE17F;
@@ -182,9 +176,6 @@ li {
   text-transform: uppercase;
 }
 
-.main-menu-contacts {
-
-}
 
 
 
@@ -196,23 +187,7 @@ li {
   background-color: #FFE17F;
 }
 
-/*
-.navigation-link {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-  color: #000000;
-  text-transform: uppercase;
 
-  display: block;
-  padding-bottom: 15px;
-  padding-top: 15px;
-
-
-}*/
 
 /* Меню пользователя и поиск по сайту*/
 
@@ -259,6 +234,7 @@ li {
 .main-menu {
   background-color: #FFE17F;
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
   width: 100%;
 }
@@ -700,6 +676,7 @@ li {
 
 .footer-phone-block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
 
@@ -803,8 +780,6 @@ li {
 /* фильтры */
 
 .filter-main-title {
-
-
   margin: 25px 32px 25px 60px;
 }
 
@@ -823,11 +798,6 @@ li {
   color: #000000;
 }
 
-.filter-section {
-
-
-
-}
 
 .filter-title {
   grid-column: 1/3;
@@ -955,6 +925,7 @@ li {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-prev {

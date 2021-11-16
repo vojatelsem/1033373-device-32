@@ -120,12 +120,7 @@ li {
   box-sizing: border-box;
 }
 
-.manage-link {
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000;
-  text-decoration: none;
-}
+
 /* основное меню */
 .main-menu-panel {
   display: flex;
@@ -146,6 +141,10 @@ li {
   min-width: 293px;
   margin-right: 247px;
   color :#000000;
+}
+
+.navigation-catalog:focus {
+  outline: #af4fff solid 2px;
 }
 
 .header-navigation {
@@ -204,8 +203,25 @@ li {
 
 .manage-user-item {
   display: inline-block;
-  padding-right: 10px;
+
+
 }
+
+.manage-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 19px 10px 41px;
+
+}
+
+.manage-link:focus {
+  outline: #af4fff solid 2px;
+}
+
+
 
 /* Меню каталога товаров и ослуживания товаров */
 .manage-goods {
@@ -331,6 +347,7 @@ li {
 
 .categories-link {
   font-family: Raleway, sans-serif;
+  position: absolute;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -338,14 +355,27 @@ li {
   text-transform: none;
   text-decoration: none;
   color: #000000;
+  display: inline-block;
+
+}
+
+.categories-item:nth-child(1)::before{
+  content: url("../img/icons/categories/virtual.png");
+  position: relative;
+  top: 53px;
+  left: 32px;
+  padding-bottom: 30px;
+  /*background: #FFE17F url("../img/icons/categories/virtual.png") no-repeat center;*/
 }
 
 .categories-item {
   margin-bottom: 33px;
-  border: 1px solid black;
+
   width: 160px;
   height: 160px;
 }
+
+
 
 
 /* Сервисы */
@@ -507,8 +537,9 @@ li {
 .distribution-btn {
 
   min-width: 260px;
-  padding-top: 17px;
-  padding-bottom: 18px;
+  padding: 18px 40px;
+  /*padding-top: 17px;
+  padding-bottom: 18px;*/
   margin-right: 136px;
 
 
@@ -523,6 +554,8 @@ li {
   color: #000000;
 
 
+  border: none;
+  cursor: pointer;
 
 }
 

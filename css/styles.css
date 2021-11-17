@@ -345,9 +345,53 @@ li {
 
 /* Панель с категориями товаров */
 
+.categories-item {
+  position: relative;
+  margin-bottom: 33px;
+  padding-top: 193px;
+
+  width: 160px;
+
+
+}
+
+.categories-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+}
+
+.categories-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+
+.categories-item:hover::before {
+  background: #FFC700;
+}
+
+.categories-item:focus::before {
+  outline: #AF4FFF solid 5px;
+  color: #AF4FFF;
+}
+
+
+.categories-item:active::after {
+  opacity: 0.3;
+}
+
 .categories-link {
   font-family: Raleway, sans-serif;
-  position: absolute;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -355,25 +399,46 @@ li {
   text-transform: none;
   text-decoration: none;
   color: #000000;
-  display: inline-block;
+  display: block;
+  tab-index: -1;
 
 }
 
-.categories-item:nth-child(1)::before{
-  content: url("../img/icons/categories/virtual.png");
-  position: relative;
-  top: 53px;
-  left: 32px;
-  padding-bottom: 30px;
-  /*background: #FFE17F url("../img/icons/categories/virtual.png") no-repeat center;*/
+.icon-virtual::after {
+  background-image: url("../img/icons/categories/virtual.png");
+  background-position: center;
 }
 
-.categories-item {
-  margin-bottom: 33px;
-
-  width: 160px;
-  height: 160px;
+.icon-selfi::after {
+  background-image: url("../img/icons/categories/selfi.png");
+  background-position: center;
 }
+
+.icon-action::after {
+  background-image: url("../img/icons/categories/action.png");
+  background-position: center;
+}
+
+.icon-fitness::after {
+  background-image: url("../img/icons/categories/fitness.png");
+  background-position: center;
+}
+
+.icon-smart::after {
+  background-image: url("../img/icons/categories/smart.png");
+  background-position: center;
+}
+
+.icon-quadro::after {
+  background-image: url("../img/icons/categories/quadro.png");
+  background-position: center;
+}
+
+
+
+
+
+
 
 
 
